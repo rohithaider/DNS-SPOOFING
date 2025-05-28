@@ -1,7 +1,7 @@
 # 💀 DNS Spoofing Simulation with Ettercap in a Controlled Lab (Kali vs Kali)
 
 > **⚠️ Educational Purpose Only**  
-> This project demonstrates a DNS spoofing attack in a **completely isolated lab environment** using **Ettercap** and a fake Facebook page. Do NOT replicate this outside of a controlled setting.
+> This project demonstrates a DNS spoofing attack in a **completely isolated lab environment** using **Ettercap** and a fake ```pmiscs.cse.du.ac.bd``` page. Do NOT replicate this outside of a controlled setting.
 
 ---
 
