@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>You Are Doomed</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: red;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      animation: glitchBackground 2s infinite alternate;
+    }
+
+    h1 {
+      font-size: 5rem;
+      text-shadow: 0 0 10px red;
+      animation: glitch 0.5s infinite;
+    }
+
+    h2, h3 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+      text-shadow: 0 0 5px red;
+    }
+
+    @keyframes glitch {
+      0% {
+        transform: translate(0);
+      }
+      20% {
+        transform: translate(-2px, 2px);
+      }
+      40% {
+        transform: translate(2px, -2px);
+      }
+      60% {
+        transform: translate(-1px, 1px);
+      }
+      80% {
+        transform: translate(1px, -1px);
+      }
+      100% {
+        transform: translate(0);
+      }
+    }
+
+    @keyframes glitchBackground {
+      0% {
+        background-color: black;
+      }
+      100% {
+        background-color: #0a0a0a;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>YOU ARE DOOMED</h1>
+  <h2>by Mohtashim Haider</h2>
+  <h3>Batch 4, Cybersecurity</h3>
+  <h3>University of Dhaka</h3>
+</body>
+</html>
