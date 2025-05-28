@@ -219,6 +219,13 @@ dns_spoof: A [pmics.cse.du.ac.bd] spoofed to [192.168.219.134] TTL [3600 s]
 
 <img width="637" alt="Screenshot 2025-05-28 at 1 04 50 PM" src="https://github.com/user-attachments/assets/bf8f1dcd-557b-405c-a41b-cbc265ee129c" />
 
+Video:
+
+
+
+https://github.com/user-attachments/assets/01954f0f-6076-427b-9081-98aa7da105ea
+
+
 ---
 
 ##  Conclusion
