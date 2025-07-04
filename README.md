@@ -47,7 +47,7 @@ Create the page content:
 
 ```bash
 sudo mkdir -p /var/www/
-sudo nrm -rf /var/www/html/index.html
+sudo rm -rf /var/www/html/index.html
 sudo nano /var/www/html/index.html
 ```
 <img width="644" alt="Screenshot 2025-05-28 at 12 52 22 PM" src="https://github.com/user-attachments/assets/f72965a2-5594-42c9-8f61-0b837a5954af" />
