@@ -1,16 +1,16 @@
-# 💀 DNS Spoofing Simulation with Ettercap in a Controlled Lab (Kali vs Kali)
+# DNS Spoofing Simulation with Ettercap in a Controlled Lab (Kali vs Kali)
 
-> **⚠️ Educational Purpose Only**  
+> ** Educational Purpose Only**  
 > This project demonstrates a DNS spoofing attack in a **completely isolated lab environment** using **Ettercap** and a fake ```pmiscs.cse.du.ac.bd``` page. Do NOT replicate this outside of a controlled setting.
 
 ---
 
-## 🧠 1. Machine Configuration
+## 1. Machine Configuration
 
 | Role       | OS        | IP Address      | Description                                |
 |------------|-----------|------------------|--------------------------------------------|
-| 🛡️ Victim   | Kali Linux | `192.168.219.135` | Regular Kali VM with default network config |
-| 🎯 Attacker | Kali Linux | `192.168.219.134` | Runs Ettercap and hosts the fake site       |
+| Victim   | Kali Linux | `192.168.219.135` | Regular Kali VM with default network config |
+| Attacker | Kali Linux | `192.168.219.134` | Runs Ettercap and hosts the fake site       |
 
 <img width="646" alt="Screenshot 2025-05-28 at 12 48 39 PM" src="https://github.com/user-attachments/assets/b6328de8-46b6-43e5-8398-ce40c785bd17" />
 <img width="646" alt="Screenshot 2025-05-28 at 12 49 05 PM" src="https://github.com/user-attachments/assets/95314cfc-67c0-4103-b43d-07a409a46283" />
@@ -20,16 +20,16 @@
 
 ---
 
-## ⚙️ 2. Attack Methodology: DNS Spoof via Ettercap
+## 2. Attack Methodology: DNS Spoof via Ettercap
 
-### 🧩 Tools Used
+### Tools Used
 - `Ettercap`: To perform DNS spoofing in real time
 - `Apache2`: To serve the fake Facebook page
 - `HTML/CSS`: Custom phishing-style page
 
 ---
 
-### 🔥 Attack Flow
+### Attack Flow
 
 1. **Victim browses `pmics.cse.du.ac.bd`** as usual.
 2. **Ettercap intercepts the DNS request** on the attacker machine.
@@ -39,9 +39,9 @@
 
 ---
 
-## 🚀 3. Execution Steps (Attacker Side)
+## 3. Execution Steps (Attacker Side)
 
-### 📁 Step 1: Set Up the Fake pmics.cse.du.ac.bd Page
+### Step 1: Set Up the Fake pmics.cse.du.ac.bd Page
 
 Create the page content:
 
@@ -135,7 +135,7 @@ sudo systemctl start apache2
 <img width="644" alt="Screenshot 2025-05-28 at 12 53 44 PM" src="https://github.com/user-attachments/assets/9f5583b1-810c-41ec-b944-a0610f6af923" />
 
 
-## 🧠 Step 2: Configure Ettercap DNS Spoof
+## Step 2: Configure Ettercap DNS Spoof
 2.1 Create a Custom DNS Spoofing Hosts File:
 ```bash
 sudo nano /etc/ettercap/etter.dns
@@ -155,7 +155,7 @@ Before the attack, when victim browses ```pmics.cse.du.ac.bd```:
 
 <img width="1423" alt="Screenshot 2025-05-28 at 1 10 31 PM" src="https://github.com/user-attachments/assets/d536904c-36d8-4170-8cd9-1d0279bfe837" />
 
-## 🧪 Step 3: Launch Ettercap
+## Step 3: Launch Ettercap
 
 Run this in terminal:
 ```bash
@@ -178,8 +178,8 @@ Explanation:
 <img width="644" alt="Screenshot 2025-05-28 at 12 57 39 PM" src="https://github.com/user-attachments/assets/bf9163de-3cc5-4491-ab0a-06a31a7a1dd6" />
 
 
-## 📸 4. Proof of Attack
-✅ Successful Execution Steps:
+## 4. Proof of Attack
+Successful Execution Steps:
 Victim opens Firefox:
 ```url
 pmics.cse.du.ac.bd
@@ -235,7 +235,7 @@ This lab shows how DNS spoofing using Ettercap can mislead a user into trusting 
 
 ---
 
-# 🎓 Author 
+# Author 
 ```MOHTASHIM HAIDER```
 
 ```BATCH-4, CYBERSECURITY```
